@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.img img{
+    position: fixed;
+    width: 100%;
+}
+.main_info{
+    width: 60vh;
+    display: flex;
+    border-radius: 20px;
+    height: 64vh;
+    padding: 12px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+}
+.main_bus input{
+    width: 30vh;
+    height: 5vh;
+    border-radius: 15px;
+}
+.main_menu{
+    position: absolute;
+    display: flex;
+    top: 15vh;
+    flex-direction: column;
+    align-items: center;
+    right: 35%;
+}
+.locate{
+    width: 74%;
+    display: flex;
+    height: 59vh;
+    flex-direction: column;
+}
+.locate h1{
+    font-size: 56px;
+    bottom: 13px;
+}
+.des{
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.temp{
+    position: relative;
+    bottom: 9px;
+    font-size: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.temp h1{
+    font-size: 47px;
+}
+.sol img{
+    position: absolute;
+    width: 50%;
+    right: 53vh;
+    border-radius: 50%;
+    bottom: 0vh;
+    animation-name: sol;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+@keyframes sol {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+    
+}
